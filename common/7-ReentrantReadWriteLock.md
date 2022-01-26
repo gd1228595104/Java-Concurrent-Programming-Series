@@ -51,7 +51,7 @@ public class ReadWriteLockDemo {
 
 ### ReentrantReadWriteLock源码分析
 `ReentrantReadWriteLock`的类关系如下图所示，可以看到，它是基于`AbstractQueueSynchronizer`来实现独占锁功能的，这里根据读写锁的特性可推测出，它可能使用了AQS的共享锁和排他锁功能。
-![](media/16420883054742/16427808401210.jpg)
+![](../static/image/16427808401210.jpg)
 
 下面我们看看`ReentrantReadWriteLock`是如何初始化的。
 ```java
